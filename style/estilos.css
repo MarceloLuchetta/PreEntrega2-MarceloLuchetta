@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+html{
+    font-size: 62,5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(233, 193, 145);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+header{
+    background-color: rgba(250, 164, 3, 0.877);
+    font-size:large ;
+    display:grid;
+    justify-content:center;
+    
+    
+}
+.asaide{
+    display: grid;
+    background-color: rgb(240, 185, 65);  
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.asaide-h2{
+    font-size: 50px;
+    background-color: rgba(235, 149, 50, 0.863);
+    border-radius: 20px;
+    border-style:double;
+}
+.asaide-iframe{
+    border-radius: 20px;
+    margin-bottom: 123px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: 5px dotted rgba(248, 254, 254, 0.643);
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display:inline-flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(1, 10, 19);
+    padding:20px;
+    margin: 35px;
+    font-size: larger;
+    
+}
+
+.encabezado{
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(243, 162, 11);
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+
+.logo{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.encabezado:hover{
+    transform: scale(2);
+}
+h1{
+    font-size: 32px;
+    margin-left: 15px;
+    padding: 30px;
+}
+h2{
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    border: 20px;
+    margin:20px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    margin:10px;
+    font-size: 20px;
+
+}
+.portada{
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    border-style:80px double;
+    border-color: blueviolet;
+    
+}
+.donar{
+    display:flex;
+    margin-left: 600px;  
+}
+
+
+.encabezadoContacto{
+    display: block;
+    padding: 5px;
+    margin:5px;
+    border:5px;
+}
+
+
+.formularioContacto{
+    display:inline-block;
+    border-top: 5px;
+    border-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-style:oblique;
+    font-weight: lighter;
+    font-size: 22px;
+    text-align:justify;
+    padding: 20px;
+    border: 10px;
+
+}
+
+.logo{
+    height: 130px;
+    width: 100px;
+}
+.foto-portada{
+    height: 351px;
+    width: 443px;
+}
+footer{
+    
+    background-color: rgba(250, 164, 3, 0.877);
+    margin-bottom: 0;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    
+}
+
+header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.encabezado{
+    grid-area: encabezado;
+}
+.main{
+    grid-area: main;
+}
+.donar{
+    grid-area: donar;
+}
+.asaide{
+    grid-area: asaide;
+}
+.galeria-grid{
+    grid-area: galeria;
+}
+footer{
+    grid-area: footer;
+}
+.envoltura{
+    
+    margin-bottom: 1,5em;
+    gap:20px;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "encabezado"
+    "main"
+    "donar"
+    "asaide"
+    "galeria"
+    "footer";
+}
+.donar{
+    display:flex;
+    margin-left: 100px;
+}
+
+
+
+.galeria-grid-img{
+    background-color: rgb(240, 185, 65);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    gap:15px;
+    justify-items:center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.img-grid{
+    width: 150px;
+    height:250px;
+    border: 9px solid #a76707;
+    margin-top: 15px;
+}
+@media(min-width:500px){
+    .envoltura{
+        margin:0;
+        display: grid;
+        grid-template-areas: 
+        "header         header"
+        "nav            nav"
+        "encabezado    encabezado"
+        "main          main"
+        "donar         asaide"
+        "donar        asaide"
+        "galeria       galeria"
+        "footer        footer";
+        grid-template-columns: 1fr 3fr;
+    }
+    nav ul{
+        display:flex;
+        justify-content:space-between;
+    }
+    .donar{
+        margin-left: 100px;
+    }
+    .img-grid{
+        width: 250px;
+        height:350px;
+    }
+
+    footer{
+        margin-top:0;
+    }
+}
+@media (min-width:768px){
+    .envoltura{
+        margin-bottom: 1,5em;
+        display:grid;
+        grid-template-areas: 
+        " header            header      header"
+        " encabezado        encabezado  encabezado"
+        " nav               main        main"
+        " nav               asaide      asaide"
+        " galeria          galeria      galeria"
+        " footer           footer       footer";
+        grid-template-columns: 1fr 4fr  1fr;
+    }
+    nav ul{
+        display:flex;
+        flex-direction: column;
+    }   
+    .galeria-grid-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        gap: 15px;
+        margin: 3em;
+    }   
+    .img-grid{
+        width: 350px;
+        height:450px;
+    } 
+    footer{
+        margin-top: 1,5em;
+    }
+}
+@media (min-width:1024px){
+    
+    .galeria-grid-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        padding: 1.5em;
+        margin:0;
+    }
+    .img-grid{
+        width:400px;
+        height: 500px;
+        margin-top: 20px;
+    }
+}
+
+.grid {
+    display: grid;
+    background-color: gray;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.tipoProd{
+
+    height: 400px;
+    background-color: pink;
+    margin:10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.item1{
+            height: 120px;
+            width: 120px;
+            border-radius: 20px;
+            border: 5px dotted rgba(121, 26, 210, 0.643);
+        
+            margin-top: 60px;
+            margin-left: 40px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+}
+.aviso{
+    display:flex;
+    height: 500px;
+    width: 300px;
+    border-radius: 20px;
+    border: 5px dotted rgba(248, 254, 254, 0.643);
+    margin-bottom: 20px;
+}
