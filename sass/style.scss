@@ -1,107 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-html{
-    font-size: 62,5%;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: rgb(233, 193, 145);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-weight: bolder;
-    display: flex;
-    flex-direction:column;
-    min-height: 100vh;
-}
-header{
-    background-color: rgba(250, 164, 3, 0.877);
-    font-size:large ;
-    display:grid;
-    justify-content:center;
-    
-    
-}
-.asaide{
-    display: grid;
-    background-color: rgb(240, 185, 65);  
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.asaide-h2{
-    font-size: 50px;
-    background-color: rgba(235, 149, 50, 0.863);
-    border-radius: 20px;
-    border-style:double;
-}
-.asaide-iframe{
-    border-radius: 20px;
-    margin-bottom: 123px;
-    margin-right: 20px;
-    border-radius: 20px;
-    border: 5px dotted rgba(248, 254, 254, 0.643);
-}
-
-ul{
-    list-style-type: none;
-}
-li{
-    display:inline-flex;
-    justify-content: center;
-}
-a{
-    text-decoration: none;
-    color: rgb(1, 10, 19);
-    padding:20px;
-    margin: 35px;
-    font-size: larger;
-    
-}
-
-.encabezado{
-    display: flex;
-    justify-content:center;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: rgb(243, 162, 11);
-    border-radius: 10px;
-    transition-property: all;
-    transition-duration: 2s;
-}
+@import"variablesGlobales";
+@import "fuentes";
+@import "generales";
+@import "propaganda";
+@import "navegacion";
+@import "encabezado";
+@import "etiquetasH";
 
 
-.logo{
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-.encabezado:hover{
-    transform: scale(2);
-}
-h1{
-    font-size: 32px;
-    margin-left: 15px;
-    padding: 30px;
-}
-h2{
-    display: flex;
-    justify-content:center;
-    padding: 10px;
-    border: 20px;
-    margin:20px;
-}
-h3{
-    display: flex;
-    justify-content: center;
-    color: blue;
-    margin:10px;
-    font-size: 20px;
 
-}
 .portada{
     margin-top: 20px;
     margin-left: 150px;
@@ -113,18 +19,14 @@ h3{
 }
 .donar{
     display:flex;
-    margin-left: 600px;  
+    margin-left: 400px;  
 }
-
-
 .encabezadoContacto{
     display: block;
     padding: 5px;
     margin:5px;
     border:5px;
 }
-
-
 .formularioContacto{
     display:inline-block;
     border-top: 5px;
@@ -153,7 +55,6 @@ p{
     width: 443px;
 }
 footer{
-    
     background-color: rgba(250, 164, 3, 0.877);
     margin-bottom: 0;
     margin-top: 10px;

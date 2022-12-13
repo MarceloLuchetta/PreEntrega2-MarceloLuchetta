@@ -1,0 +1,16 @@
+ul{
+    list-style-type: none;
+    li{
+        display:inline-flex;
+        justify-content: center;
+        
+        a{
+            text-decoration: none;
+            color: rgb(1, 10, 19);
+            padding:20px;
+            margin: 20px;
+            font-size: larger;
+            
+        }
+    }
+}
