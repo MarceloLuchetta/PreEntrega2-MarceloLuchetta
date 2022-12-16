@@ -66,8 +66,8 @@ ul li a {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin-left: 65px;
+  margin-right: 65px;
   background-color: rgb(243, 162, 11);
   border-radius: 20px;
   transition-property: all;
