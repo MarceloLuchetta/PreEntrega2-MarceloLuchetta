@@ -47,12 +47,11 @@ p{
 }
 
 .logo{
-    height: 130px;
-    width: 100px;
+    @include sizes (100px,130px);
 }
 .foto-portada{
-    height: 351px;
-    width: 443px;
+    @include sizes (443px,351px);
+    
 }
 footer{
     background-color: rgba(250, 164, 3, 0.877);

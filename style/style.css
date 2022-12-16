@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: rgb(233, 193, 145);
+  background: rgb(233, 193, 145);
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-weight: bolder;
@@ -57,7 +57,7 @@ ul li {
 ul li a {
   text-decoration: none;
   color: rgb(1, 10, 19);
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
   font-size: larger;
 }
@@ -65,27 +65,25 @@ ul li a {
 .encabezado {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 40px;
+  margin-left: 75px;
+  margin-right: 75px;
   background-color: rgb(243, 162, 11);
-  border-radius: 10px;
+  border-radius: 20px;
   transition-property: all;
   transition-duration: 2s;
 }
-
-.logo {
+.encabezado .logo {
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
-
 .encabezado:hover {
-  transform: scale(1, 2);
+  transform: scale(1.1);
 }
 
 h1 {
-  font-size: 32px;
+  font: 32px;
   margin-left: 15px;
   padding: 30px;
 }
@@ -106,6 +104,15 @@ h3 {
   font-size: 20px;
 }
 
+.tituloPrincipal, .h1 {
+  color: rgb(51, 51, 117);
+  border-radius: 20px;
+}
+
+.h1 {
+  text-align: center;
+}
+
 .portada {
   margin-top: 20px;
   margin-left: 150px;
@@ -117,7 +124,7 @@ h3 {
 
 .donar {
   display: flex;
-  margin-left: 600px;
+  margin-left: 400px;
 }
 
 .encabezadoContacto {
